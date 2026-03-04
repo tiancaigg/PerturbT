@@ -1,0 +1,45 @@
+# =========================
+# PerturbT Data & Models
+# =========================
+# Ignore all single-cell data and AnnData objects
+*.h5ad
+*.h5
+*.loom
+*.mtx
+*.mtx.gz
+
+# Ignore tabular data
+*.csv
+*.tsv
+*.txt
+
+# Ignore GEARS splits and serialized Python objects
+*.pkl
+*.pickle
+
+# Ignore PyTorch model weights and checkpoints
+*.pt
+*.pth
+lightning_logs/
+wandb/
+
+# Ignore specific heavy directories (based on your previous code)
+adata/
+data/
+GEARS_data/
+
+# =========================
+# Python & Jupyter
+# =========================
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.env
+venv/
+env/
+
+# =========================
+# OS Generated Files
+# =========================
+.DS_Store
+Thumbs.db
