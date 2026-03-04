@@ -38,6 +38,9 @@ __pycache__/
 venv/
 env/
 
+*.log
+*.json
+
 # =========================
 # OS Generated Files
 # =========================
