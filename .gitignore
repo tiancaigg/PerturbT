@@ -1,48 +1,12 @@
-# =========================
-# PerturbT Data & Models
-# =========================
-# Ignore all single-cell data and AnnData objects
-*.h5ad
-*.h5
-*.loom
-*.mtx
-*.mtx.gz
+# 1. Ignore everything in the repository
+*
 
-# Ignore tabular data
-*.csv
-*.tsv
-*.txt
+# 2. But do NOT ignore the .gitignore file itself (highly recommended)
+!.gitignore
 
-# Ignore GEARS splits and serialized Python objects
-*.pkl
-*.pickle
+# 3. Do NOT ignore any .ipynb files
+!*.ipynb
+!*.md
 
-# Ignore PyTorch model weights and checkpoints
-*.pt
-*.pth
-lightning_logs/
-wandb/
-
-# Ignore specific heavy directories (based on your previous code)
-adata/
-data/
-GEARS_data/
-
-# =========================
-# Python & Jupyter
-# =========================
-__pycache__/
-*.py[cod]
-.ipynb_checkpoints/
-.env
-venv/
-env/
-
-*.log
-*.json
-
-# =========================
-# OS Generated Files
-# =========================
-.DS_Store
-Thumbs.db
+# 4. If you have notebooks in subfolders, you need to allow directories
+!*/
